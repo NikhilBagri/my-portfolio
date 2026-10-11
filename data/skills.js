@@ -1,7 +1,7 @@
 /* 🛠️ SKILLS — level = 0 to 100 (bar width) */
 export const skills = [
   { name: "Video Editing", level: 95 },
-  { name: "Color Grading", level: 88 },
+  { name: "Ai Video Genaration", level: 88 },
   { name: "Motion Graphics", level: 80 },
   { name: "Sound Design", level: 75 },
   { name: "Storyboarding", level: 70 },
@@ -9,6 +9,14 @@ export const skills = [
 
 /* 🧰 TOOLS — shown as wobbly chips */
 export const tools = [
-  "Premiere Pro", "After Effects", "DaVinci Resolve", "Final Cut Pro",
-  "Photoshop", "Audition", "Blender", "CapCut", "Frame.io",
+  "Premiere Pro",
+  "After Effects",
+  "DaVinci Resolve",
+  "Claude Design",
+  "Higgsfield AI",
+  "Heygen Ai",
+  "Google Flow",
+  "Photoshop",
+  "Canva",
+  "Affinity",
 ];

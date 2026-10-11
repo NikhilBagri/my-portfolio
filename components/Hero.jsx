@@ -56,7 +56,7 @@ export default function Hero() {
             <MagneticButton href="#work" className="rounded-full bg-accent px-7 py-4 font-semibold text-cream hover:bg-accent-dark">
               View my work <FiArrowDownRight />
             </MagneticButton>
-            <a href={site.resumeUrl} download className="inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3.5 font-semibold transition hover:bg-ink hover:text-cream">
+            <a href="/Nikhil_Bagri_VE.pdf" download className="inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3.5 font-semibold transition hover:bg-ink hover:text-cream">
               <FiDownload /> Resume
             </a>
           </div>
