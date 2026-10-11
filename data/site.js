@@ -16,7 +16,7 @@ export const site = {
   available: true,                       // green "Available for work" pill
   badgeText: "AVAILABLE FOR WORK • LET'S CREATE • ",
 
-  email: "[nikhilbagri18@gmail.com]",
+  email: "nikhilbagri18@gmail.com",
   location: "Bangalore, India",
   timezone: "Asia/Kolkata",                       // e.g. "America/New_York" → footer clock
   resumeUrl: "/resume.pdf",              // file inside /public

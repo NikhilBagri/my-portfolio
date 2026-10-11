@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Portfolio
 
 ## Run
@@ -23,3 +24,7 @@ formspree.io → New Form → copy ID → data/site.js → contact.formspreeId
 
 ## Deploy
 Push to GitHub → import on vercel.com → Deploy.
+=======
+# my-portfolio
+My personal portfolio website built with Next.js
+>>>>>>> 80f2db120195174169db443204773251378e4d65
