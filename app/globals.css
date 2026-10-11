@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* =========================================================
+   🎨 THEME — change these 5 colors to re-skin the whole site
+   Usage in code: bg-cream, text-ink, bg-accent, border-accent…
+   ========================================================= */
+@theme {
+  --color-cream: #f2ede4;       /* page background */
+  --color-cream-dark: #e6dfd2;  /* cards / alternate sections */
+  --color-ink: #141414;         /* text + dark sections */
+  --color-accent: #ff4d1c;      /* orange highlight */
+  --color-accent-dark: #e23a0b; /* orange hover */
+
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 35s linear infinite;
+  --animate-spin-slow: spin-slow 14s linear infinite;
+
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes marquee-reverse { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+}
+
+/* Fonts loaded in app/layout.js → use font-display / font-body */
+@theme inline {
+  --font-display: var(--font-anton);
+  --font-body: var(--font-grotesk);
+}
+
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 90px; }
+::selection { background: var(--color-accent); color: var(--color-cream); }
+
+/* Hollow outlined text */
+@utility text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-ink);
+}
+
+/* Hide scrollbar, keep scrolling */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+/* 🎞️ Film grain — toggle in data/site.js → fun.filmGrain */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-marquee, .animate-marquee-reverse, .animate-spin-slow { animation: none; }
+}
