@@ -182,7 +182,7 @@ export const videos = [
     category: "Travel",
     ratio: "16:9",
     src: "/ClaudeShowreel.mp4",
-    thumbnail: "/Claudeshowreel.png",
+    // thumbnail: "/Claudeshowreel.png",
     // no thumbnail → first frame used automatically
     year: "2023",
     client: "Travel Brand",
